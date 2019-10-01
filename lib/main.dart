@@ -7,7 +7,7 @@ void main() {
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.indigo,
-          title: Text('Good Morning!'),
+          title: Text('Business Card'),
         ),
         body: Center(child: Text('Have a productive day!')),
       ),
