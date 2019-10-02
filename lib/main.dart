@@ -6,9 +6,19 @@ void main() {
     home: Scaffold(
       backgroundColor: Colors.orange,
       appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.share),
+            onPressed: share,
+          ),
+          IconButton(
+            icon: Icon(Icons.refresh),
+            onPressed: refresh,
+          )
+        ],
         centerTitle: true,
         backgroundColor: Colors.deepOrangeAccent,
-        title: Text('Business Card'),
+        title: Text('Rahul Masih'),
       ),
       body: Center(
         child: Column(
@@ -29,11 +39,16 @@ void main() {
                   shadows: List(100),
                   color: Colors.white),
             ),
-            Row(mainAxisAlignment: MainAxisAlignment.center,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Container(height: 3, width: 200,color: Colors.white,),
+                  child: Container(
+                    height: 3,
+                    width: 200,
+                    color: Colors.white,
+                  ),
                 )
               ],
             ),
@@ -84,6 +99,14 @@ void main() {
       ),
     ),
   ));
+}
+
+void refresh() {
+  print('refresh');
+}
+
+void share() {
+  print('shared');
 }
 
 void cpy() {
